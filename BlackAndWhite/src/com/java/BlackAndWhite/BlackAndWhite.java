@@ -5,7 +5,7 @@ public class BlackAndWhite {
         System.out.println("BlackAndWhite are colors");
     }
 
-    public void Heatabsorbtion() {
+    public void heatabsorbtion() {
         System.out.println("Black color absorbs more hea");
     }
 }

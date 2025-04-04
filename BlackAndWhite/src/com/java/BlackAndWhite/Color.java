@@ -3,7 +3,7 @@ package com.java.BlackAndWhite;
 import java.util.Objects;
 
 public class Color {
-    public Color(Color color) {
+    public Color(BlackAndWhite color) {
         System.out.println("Running constructor in Color");
         if (Objects.nonNull(color)) {
             color.heatabsorbtion();
