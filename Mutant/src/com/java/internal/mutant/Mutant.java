@@ -1,11 +1,7 @@
 package com.java.internal.mutant;
 
 public class Mutant {
-    private String dnaSequence="RNA";
-    private int powerLevel=80;
-    private boolean canRegenerate=false;
-    private double mutationRate=4.6;
-    private String origin="human";
+     String origin="human";
     //setter or mutator(init)
     void setDnaSequence(String dnaSequence) {
         this.dnaSequence = dnaSequence;
@@ -26,7 +22,11 @@ public class Mutant {
     public String getDnaSequence(){
         return dnaSequence;
     }
-    public int getPowerLevel() {
+    public int getPoprivate String dnaSequence="RNA";
+    private int powerLevel=80;
+    private boolean canRegenerate=false;
+    private double mutationRate=4.6;
+    privatewerLevel() {
         return powerLevel;
     }
 
