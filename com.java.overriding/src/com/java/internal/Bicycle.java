@@ -1,8 +1,8 @@
 package com.java.internal;
 
 public class Bicycle {
-    protected String type; // Type of bicycle (e.g., Mountain, Road)
-    protected int gearCount; // Number of gears
+    private String type; // Type of bicycle (e.g., Mountain, Road)
+    private int gearCount; // Number of gears
 
     public Bicycle() {
         // default constructor

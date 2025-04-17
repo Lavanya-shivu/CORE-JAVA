@@ -1,8 +1,8 @@
 package com.java.internal;
 
 public class Bottle {
-    protected int capacity; // Capacity of the bottle (in milliliters)
-    protected String material; // Material of the bottle (e.g., plastic, glass)
+    private int capacity;
+    private String material;
 
     public Bottle() {
         // Default constructor

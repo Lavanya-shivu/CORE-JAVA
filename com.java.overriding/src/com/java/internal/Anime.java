@@ -1,8 +1,8 @@
 package com.java.internal;
 
 public class Anime {
-    protected String title;
-    protected int episodes;
+    private String title;
+    private int episodes;
 
     public Anime() {
         // default constructor

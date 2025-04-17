@@ -1,8 +1,8 @@
 package com.java.internal;
 
 public class Birthday {
-    protected String date; // Date of the birthday
-    protected int age; // Age of the person
+    private String date; // Date of the birthday
+    private int age; // Age of the person
 
     public Birthday() {
         // default constructor

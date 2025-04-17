@@ -1,8 +1,8 @@
 package com.java.internal;
 
 public class Barbie {
-    protected String fashionStyle;
-    protected String accessories;
+    private String fashionStyle;
+    private String accessories;
 
     public Barbie() {
         // default constructor

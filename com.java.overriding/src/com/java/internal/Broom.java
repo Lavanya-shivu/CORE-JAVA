@@ -1,20 +1,18 @@
 package com.java.internal;
 
 public class Broom {
-    protected String material; // Material of the broom (e.g., plastic, wood)
-    protected String type; // Type of broom (e.g., regular, industrial)
+    private String material;
+    private String type;
 
     // Default constructor
     public Broom() {
     }
 
-    // Constructor to initialize variables
     public Broom(String material, String type) {
         this.material = material;
         this.type = type;
     }
 
-    // Setter for material
     public void setMaterial(String material) {
         this.material = material;
     }

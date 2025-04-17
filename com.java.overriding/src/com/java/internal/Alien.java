@@ -1,8 +1,9 @@
 package com.java.internal;
 
 public class Alien {
-    protected String planet;
-    protected int age;
+    private String planet;
+    private
+    int age;
 
     public Alien() {
         // default constructor

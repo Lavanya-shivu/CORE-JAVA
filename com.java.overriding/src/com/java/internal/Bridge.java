@@ -1,8 +1,8 @@
     package com.java.internal;
 
     public class Bridge {
-        protected String material; // Material of the bridge (e.g., concrete, steel)
-        protected double length; // Length of the bridge (in meters)
+        private String material;
+        private double length;
 
         // Default constructor
         public Bridge() {

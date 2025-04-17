@@ -1,8 +1,8 @@
 package com.java.internal;
 
 public class Box {
-    protected String material; // Material of the box (e.g., cardboard, metal)
-    protected String size; // Size of the box (e.g., small, medium, large)
+    private String material;
+    private String size;
 
     public Box() {
         // Default constructor

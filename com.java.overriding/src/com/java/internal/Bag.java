@@ -1,8 +1,8 @@
 package com.java.internal;
 
 public class Bag {
-    protected String color;
-    protected int capacity; // in liters
+    private String color;
+    private int capacity; // in liters
 
     public Bag() {
         // default constructor

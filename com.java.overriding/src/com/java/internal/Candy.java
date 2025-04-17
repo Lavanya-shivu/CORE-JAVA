@@ -1,20 +1,17 @@
 package com.java.internal;
 
 public class Candy {
-    protected String flavor;  // Flavor of the candy (e.g., chocolate, mint, caramel)
-    protected String type;    // Type of candy (e.g., hard, soft, chewy)
+    private String flavor;
+    private String type;
 
-    // Default constructor
     public Candy() {
     }
 
-    // Constructor to initialize variables
     public Candy(String flavor, String type) {
         this.flavor = flavor;
         this.type = type;
     }
 
-    // Setter for flavor
     public void setFlavor(String flavor) {
         this.flavor = flavor;
     }

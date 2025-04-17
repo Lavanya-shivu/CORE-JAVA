@@ -1,8 +1,8 @@
 package com.java.internal;
 
 public class Blanket {
-    protected String material; // Material of the blanket (e.g., wool, cotton)
-    protected String size; // Size of the blanket (e.g., small, medium, large)
+    private String material;
+    private String size;
 
     public Blanket() {
         // Default constructor
