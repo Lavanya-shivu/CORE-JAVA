@@ -27,7 +27,7 @@ public class Pillow {
             if (Objects.equals(this.material, pillow.material) &&
                     Objects.equals(this.shape, pillow.shape) &&
                     Objects.equals(this.size, pillow.size) &&
-                    Objects.equals(this.price,pillow.price)) {
+                    Objects.equals(this.price, pillow.price)) {
                 System.out.println("Pillow is Matching");
                 return true;
             }
@@ -35,5 +35,6 @@ public class Pillow {
             return false;
         }
         System.err.println("Invalid object passed for comparison");
-        return
+        return false;
     }
+}
