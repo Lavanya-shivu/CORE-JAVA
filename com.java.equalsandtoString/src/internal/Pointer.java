@@ -23,7 +23,10 @@ public class Pointer {
     public void setisLaser(boolean isLaser) {
         this.isLaser = isLaser;
     }
-
+    @Override
+    public String toString() {
+        return "Pointer{" + "type='" + type + ", color='" + color + ", length=" + length + ", isLaser=" + isLaser + '}';
+    }
     @Override
     public boolean equals(Object obj) {
         if (obj != null && obj instanceof Pointer) {
