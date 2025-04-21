@@ -8,6 +8,7 @@ public class Highway extends Road{
     }
     @Override
     public void length(){
+
         System.out.println("Usually long");
     }
     @Override
@@ -15,11 +16,13 @@ public class Highway extends Road{
         System.out.println("Connects urban and rural areas");
     }
     @Override
-    public void material(){
+    public void material()
+    {
         System.out.println(" Made of concrete ");
     }
     @Override
-    public void condition(){
+    public void condition()
+    {
         System.out.println("Well-maintained and regulated");
     }
 }
