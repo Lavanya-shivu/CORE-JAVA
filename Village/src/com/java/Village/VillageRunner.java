@@ -6,8 +6,7 @@ public class VillageRunner {
         Villagehead villagehead2 = new Villagehead("Jaynag", 256);
 
         Village village = new Village("Hosahalli", 520, new Villagehead[]{villagehead1, villagehead2});
-        village
-                .display();
+        village.display();
     }
 }
 

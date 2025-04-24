@@ -3,7 +3,7 @@ package Runner;
 
 import External.Car;
 
-public class MainRunner {
+public class PersonRunner {
     private static void main(String[] args) {
         Car car = new Car("Toyota", 2022);
         System.out.println("Original Car");

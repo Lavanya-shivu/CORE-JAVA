@@ -2,7 +2,7 @@ package Runner;
 
 import External.Dog;
 
-public class MainAnimalRunner {
+public class AnimalRunner {
     public static void main(String[] args) {
         Dog dog = new Dog("Tommy", "Beagle");
         System.out.println("original Dog");
