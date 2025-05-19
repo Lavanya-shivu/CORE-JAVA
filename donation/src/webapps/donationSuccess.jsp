@@ -28,6 +28,7 @@
 </nav>
 <div align="center">
     <h2>Thank Yor For Your Donation!We Appreciate Your Contribution.</h2>
+
 </div>
 </body>
 </html>
