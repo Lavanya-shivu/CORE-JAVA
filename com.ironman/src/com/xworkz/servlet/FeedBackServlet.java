@@ -1,6 +1,8 @@
 package com.xworkz.servlet;
 
+import Service.FeedBackService;
 import dto.FeedBackDto;
+import serviceImpl.FeedBackServiceImpl;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -32,7 +34,17 @@ public class FeedBackServlet extends HttpServlet {
         dto.setFeedBack(feedBack);
         req.setAttribute("dto",dto);
 
-        RequestDispatcher requestDispatcher = req.getRequestDispatcher("feedbackSuccess.jsp");
-        requestDispatcher.forward(req,resp);
+        FeedBackService feedBackService = new FeedBackServiceImpl();
+        boolean saved = feedBackService.save(dto);
+        if(saved){
+            RequestDispatcher dispatcher = req.getRequestDispatcher("feedbackSuccess.jsp");
+            req.setAttribute("message","Save Success");
+            dispatcher.forward(req,resp);
+        }
+        else {
+            RequestDispatcher dispatcher = req.getRequestDispatcher("feedback.jsp");
+            req.setAttribute("message","Saving For FeedBack  Failed");
+        }
+
     }
 }

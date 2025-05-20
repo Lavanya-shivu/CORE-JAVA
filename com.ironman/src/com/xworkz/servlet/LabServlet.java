@@ -1,7 +1,8 @@
 package com.xworkz.servlet;
 
-import dto.DonationDto;
+import Service.LaboratoryService;
 import dto.LabDto;
+import serviceImpl.LabServiceImpl;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -33,7 +34,18 @@ public class LabServlet extends HttpServlet {
         dto.setAge(age);
         req.setAttribute("dto",dto);
 
-        RequestDispatcher requestDispatcher = req.getRequestDispatcher("labSuccess.jsp");
-        requestDispatcher.forward(req,resp);
+        LaboratoryService laboratoryService = new LabServiceImpl();
+        boolean saved = laboratoryService.save(dto);
+        if(saved){
+            RequestDispatcher dispatcher = req.getRequestDispatcher("labSuccess.jsp");
+            req.setAttribute("message", "Save Success");
+            req.setAttribute("LabDto",dto);
+            dispatcher.forward(req,resp);
+        }
+        else {
+            RequestDispatcher dispatcher = req.getRequestDispatcher("laboratory.jsp");
+            req.getRequestDispatcher("laboratory.jsp");
+            req.setAttribute("message","Saving Laboratory Failed");
+        }
     }
 }

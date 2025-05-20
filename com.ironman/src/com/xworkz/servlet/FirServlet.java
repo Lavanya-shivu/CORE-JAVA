@@ -1,6 +1,8 @@
 package com.xworkz.servlet;
 
+import Service.FirService;
 import dto.FirDto;
+import serviceImpl.FirServiceImpl;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -30,7 +32,19 @@ public class FirServlet extends HttpServlet {
         dto.setReason(reason);
         req.setAttribute("dto",dto);
 
-        RequestDispatcher requestDispatcher = req.getRequestDispatcher("firSuccess.jsp");
-        requestDispatcher.forward(req,resp);
+        FirService firService = new FirServiceImpl();
+        boolean saved = firService.save( dto);
+        if(saved){
+            RequestDispatcher dispatcher = req.getRequestDispatcher("firSuccess.jsp");
+            req.setAttribute("message","Save Success");
+            req.setAttribute("FirDto",dto);
+            dispatcher.forward(req,resp);
+        }
+        else {
+            RequestDispatcher dispatcher = req.getRequestDispatcher("fir.jsp");
+            req.setAttribute("message","Saving of Fir Failed");
+        }
+
+
     }
 }

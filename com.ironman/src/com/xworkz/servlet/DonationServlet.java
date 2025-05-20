@@ -48,7 +48,6 @@ public class DonationServlet extends HttpServlet {
             RequestDispatcher requestDispatcher = req.getRequestDispatcher("donation.jsp");
             req.setAttribute("message","Saving of Donation Failed");
         }
-                RequestDispatcher requestDispatcher = req.getRequestDispatcher("donationSucess.jsp");
-                requestDispatcher.forward(req,resp);
+
     }
 }
