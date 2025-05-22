@@ -1,6 +1,8 @@
 package servlet;
 
 import dto.ProductDto;
+import repository.ProductRepository;
+import repositoryImpl.ProductRepositoryImpl;
 import service.ProductService;
 import serviceImpl.ProductServiceImpl;
 

@@ -1,6 +1,8 @@
 package serviceImpl;
 
 import dto.ProductDto;
+import repository.ProductRepository;
+import repositoryImpl.ProductRepositoryImpl;
 import service.ProductService;
 
 public class ProductServiceImpl implements ProductService {
@@ -35,7 +37,8 @@ public class ProductServiceImpl implements ProductService {
                     return false;
                 }
                 String sellingPrice = productDto.getSellingPrice();
-                if (sellingPrice != null && !sellingPrice.isEmpty()) {
+                if (sellingPrice != null && !sellingPrice.isEmpty())
+                {
                     double SellingPrice = Double.parseDouble(sellingPrice);
                     if (SellingPrice >= 500 && SellingPrice <= 170000) {
                         System.out.println("Valid Selling Price");
@@ -104,8 +107,9 @@ public class ProductServiceImpl implements ProductService {
                                 System.out.println("Invalid Warranty");
                                 return false;
                             }
-
-                            return true;
+                            ProductRepository productRepository = new ProductRepositoryImpl();
+                            boolean persisted = productRepository.persist(productDto);
+                            return persisted;
                         }
                     }
                 }

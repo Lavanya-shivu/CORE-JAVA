@@ -19,9 +19,9 @@
 <div class="container d-flex justify-content-center align-items-center min-vh-100">
     <div class="card p-4 shadow" style="width: 150%; max-width: 700px;">
 <div class="container">
-    <h2 class="text-center">${message}</h2>
+    <h2 class="text-center text-success">${message}</h2>
     <table class="table table-bordered border-dark">
-    <thead class="table-dark">
+    <thead class="table-dark text-center">
     <h1 align="center">Thank You!</h1>
     <tr>
         <th scope="col">Field</th>
