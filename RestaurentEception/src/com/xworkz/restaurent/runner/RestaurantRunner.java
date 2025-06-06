@@ -11,7 +11,7 @@ import java.time.LocalTime;
 public class RestaurantRunner {
     public static void main(String[] args) throws BookedDateException, InvalidNameException, ClosingTimeException, FoodMenuException, InvalidRatingException, BookedTimeException, OpeningTimeException {
         RestaurantDto restaurantDto = new RestaurantDto();
-        restaurantDto.setRestaurantName("3Anmol");
+        restaurantDto.setRestaurantName("Anmol");
         restaurantDto.setRestaurantLocation("Shimoga");
         restaurantDto.setContactDetails(854699138L);
         restaurantDto.setEmail("anmol@gmail.com");

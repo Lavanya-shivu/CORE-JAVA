@@ -8,7 +8,7 @@ import java.time.LocalTime;
 
 public class RestaurantServiceImpl implements RestaurantService {
     @Override
-    public boolean validateAndSave(RestaurantDto restaurantDto) throws InvalidNameException, InvalidRatingException, FoodMenuException, OpeningTimeException, ClosingTimeException, BookedDateException, BookedTimeException {
+    public boolean validateAndSave(RestaurantDto restaurantDto) {
         boolean isValid = true;
         if (restaurantDto == null) {
             throw new NullPointerException("RestaurantDto is null");
