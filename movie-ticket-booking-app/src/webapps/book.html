@@ -6,37 +6,47 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 </head>
+<style>
+    .form-control,
+    .form-select,
+    .form-control:focus,
+    .form-select:focus,
+    textarea.form-control {
+      border: 2px solid #000;
+      box-shadow: none;
+    }
+</style>
 <body>
-<nav class="navbar navbar-expand-lg bg-warning">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark text-white">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="#">Xworkz</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Book Now!</a>
-                </li>
-            </ul>
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </div>
         </div>
     </div>
 </nav>
-<div align="center">
-    <h1>Book a Movie By Your Choice!</h1>
+<div class="container d-flex justify-content-center align-items-center min-vh-100">
+    <div class="card p-4 shadow" style="width: 110%; max-width: 500px;">
+        <div align="center">
+            <h1>Book a Movie By Your Choice!</h1>
+        </div>
     <form action="book" method="post">
-        Name: <input type="text" placeholder="Enter Your Name" name="name"><br><br>
-        Contact Number: <input type="tel" placeholder="Enter your ContactNumber" name="contactnumber"><br><br>
-        Movie Name: <input type="text" placeholder="Enter Movie Name" name="moviename"><br><br>
-        Ticket Price: <input type="text" placeholder="Enter Ticket Price" name="ticketprice"><br><br>
-        Number Of Ticket: <input type="text" placeholder="Enter number of tickets" name="numberoftickets"><br><br>
-        Location: <input type="text" placeholder="Enter location" name="location"><br><br>
-        <input type="submit" name="Book Now" class="btn btn-primary" >
+        Name: <div align="center"><input type="text" placeholder="Enter Your Name" name="name"><br><br> </div>
+        Contact Number: <div align="center"><input type="tel" placeholder="Enter your ContactNumber" name="contactnumber"><br><br> </div>
+        Movie Name: <div align="center"><input type="text" placeholder="Enter Movie Name" name="moviename"><br><br> </div>
+        Ticket Price: <div align="center"><input type="text" placeholder="Enter Ticket Price" name="ticketprice"><br><br> </div>
+        Number Of Ticket: <div align="center"><input type="text" placeholder="Enter number of tickets" name="numberoftickets"><br><br> </div>
+        Location: <div align="center"><input type="text" placeholder="Enter location" name="location"><br><br>
+        <div align="center">
+            <button class="btn btn-success" type="submit">Submit</button>
+        </div>
     </form>
+</div>
 </div>
 </body>
 </html>
