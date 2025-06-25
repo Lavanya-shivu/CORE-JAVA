@@ -3,16 +3,15 @@ package com.xworkz.dto;
 import lombok.*;
 
 import java.io.Serializable;
-
 @Getter
 @Setter
 @ToString
 @AllArgsConstructor
 @NoArgsConstructor
-public class FurnitureDto implements Serializable {
+public class FridgeDto implements Serializable {
+    private String brand;
+    private String color;
     private String type;
-    private String material;
-    private double cost;
-    private String size;
-
+    private double price;
+    private int capacity;
 }
