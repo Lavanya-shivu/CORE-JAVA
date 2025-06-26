@@ -4,7 +4,6 @@ import com.xworkz.dto.FridgeDto;
 
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.Collections;
 
 public class FridgeRepositoryImpl implements FridgeRepository {
 
@@ -23,7 +22,6 @@ public class FridgeRepositoryImpl implements FridgeRepository {
             collection.add(fridgeDto3);
             collection.add(fridgeDto4);
             collection.add(fridgeDto5);
-
 
         return collection;
 
