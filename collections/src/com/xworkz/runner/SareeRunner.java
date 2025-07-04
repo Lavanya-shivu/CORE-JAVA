@@ -48,6 +48,9 @@ public class SareeRunner {
             SareeDto sareeDto = iterator.next();
             System.out.println(sareeDto);
         }
-
+        System.out.println("==============");
+sareeDtos.stream()
+        .sorted()
+        .forEach(System.out::println);
     }
 }
