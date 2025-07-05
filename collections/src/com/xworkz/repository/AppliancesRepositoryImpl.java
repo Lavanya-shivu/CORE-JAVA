@@ -4,7 +4,6 @@ import com.xworkz.dto.AppliancesDto;
 
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.Collections;
 
 public class AppliancesRepositoryImpl implements AppliancesRepository{
     @Override
