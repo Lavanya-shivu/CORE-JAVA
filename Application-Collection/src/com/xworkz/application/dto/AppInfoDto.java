@@ -1,6 +1,12 @@
 package com.xworkz.application.dto;
 
+import lombok.*;
+
 import java.time.LocalDate;
+@Getter
+@Setter
+@NoArgsConstructor
+@ToString
 
 public class AppInfoDto implements Comparable<AppInfoDto>{
 
