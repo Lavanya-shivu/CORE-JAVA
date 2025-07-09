@@ -2,9 +2,11 @@ package com.xworkz.application.runner;
 
 import com.xworkz.application.dto.AddressDto;
 import com.xworkz.application.dto.PersonDto;
+import javafx.scene.effect.SepiaTone;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 public class PersonAddressRunner {
     public static void main(String[] args) {
@@ -94,5 +96,15 @@ public class PersonAddressRunner {
 
         System.out.println("Values");
         map.values().forEach(System.out::println);
+
+        Set<Map.Entry<PersonDto,AddressDto>> entrySet = map.entrySet();
+
+        entrySet.forEach(entry->{
+            PersonDto personDto = entry.getKey();
+            AddressDto addressDto = entry.getValue();
+
+            System.out.println("Person" + personDto + "Address" + addressDto);
+        });
     }
+
 }
