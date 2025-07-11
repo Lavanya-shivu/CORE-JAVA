@@ -1,6 +1,6 @@
 package com.xworkz.application.dto;
 
-import java.util.List;
+
 
 public class OwnerDto {
 
