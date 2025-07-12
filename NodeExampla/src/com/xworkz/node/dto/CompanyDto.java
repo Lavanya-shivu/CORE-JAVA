@@ -1,9 +1,16 @@
 package com.xworkz.node.dto;
 
-import java.util.Calendar;
-import java.util.Objects;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 
-public class CompanyDto {
+import java.util.Objects;
+import java.util.jar.JarOutputStream;
+
+@Getter
+@Setter
+@ToString
+public class CompanyDto implements Comparable<CompanyDto>{
     private String name;
     private String industryType;
     private String headquarter;
@@ -30,5 +37,10 @@ public class CompanyDto {
             }
         }
         return false;
+    }
+
+    @Override
+    public int compareTo(CompanyDto o) {
+        return this.name.compareTo(o.name);
     }
 }

@@ -5,10 +5,10 @@ import java.util.Objects;
 public class CountryDto {
     private String name;
     private String capital;
-    private long population;
+    private String population;
     private String officialLanguage;
 
-    public CountryDto(String name, String capital, long population, String officialLanguage){
+    public CountryDto(String name, String capital, String population, String officialLanguage){
         this.name = name;
         this.capital = capital;
         this.population = population;

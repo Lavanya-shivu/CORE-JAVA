@@ -1,7 +1,13 @@
 package com.xworkz.node.dto;
 
-import java.util.Objects;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 
+import java.util.Objects;
+@Getter
+@Setter
+@ToString
 public class VehicleDto {
     private String registrationNumber;
     private String model;
